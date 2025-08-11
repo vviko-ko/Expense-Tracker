@@ -2,7 +2,8 @@
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-gray-800">💰 Personal Expense Tracker</h1>
+      <h1 class="text-2xl font-bold text-gray-800">💰VFynn</h1>
+      <!-- <p class="text text-gray-400">— implying a new era in finance</p> -->
       <div class="text-gray-500 text-sm">
         Updated: {{ currentDate }}
       </div>
