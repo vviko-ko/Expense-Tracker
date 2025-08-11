@@ -59,7 +59,7 @@
 
       <button
         type="submit"
-        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded"
+        class="w-full bg-indigo-500 text-white font-semibold py-2 rounded"
       >
         Add {{ type === 'income' ? 'Income' : 'Expense' }}
       </button>
