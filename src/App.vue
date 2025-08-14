@@ -3,7 +3,6 @@
     <!-- Header -->
     <header class="bg-white shadow px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-gray-800">💰VFynn</h1>
-      <!-- <p class="text text-gray-400">— implying a new era in finance</p> -->
       <div class="text-gray-500 text-sm">
         Updated: {{ currentDate }}
       </div>
@@ -34,6 +33,14 @@
         <TransactionTable :transactions="transactions" @delete="deleteTransaction" />
       </div>
     </div>
+
+    <!-- Subscriptions Table -->
+    <!-- <div class="px-6 pb-6" v-if="subscriptions.length">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-lg font-semibold mb-4">Subscriptions</h2>
+        <TransactionTable :transactions="subscriptions" @delete="deleteTransaction" />
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -66,6 +73,9 @@ export default {
     },
     balance() {
       return this.income + this.expenses
+    },
+    subscriptions() {
+      return this.transactions.filter(t => t.isSubscription)
     }
   },
   methods: {
